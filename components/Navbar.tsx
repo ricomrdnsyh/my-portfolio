@@ -13,8 +13,6 @@ export function Navbar() {
         <div className="font-headline-md text-headline-md font-black tracking-tighter text-on-surface">
           RCMRDNSYH
         </div>
-
-        {/* Desktop Menu */}
         <div className="hidden md:flex gap-gutter items-center md:justify-end ml-auto">
           <Link
             className="text-on-surface inline-block neo-hover neo-active transition-all duration-100"
@@ -49,8 +47,6 @@ export function Navbar() {
         >
           RESUME
         </a>
-
-        {/* Hamburger Toggle */}
         <button
           className="md:hidden text-on-surface neo-border p-2 bg-primary-container shadow-[4px_4px_0px_0px_#1a1c1c] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all duration-100"
           onClick={() => setIsOpen(!isOpen)}
@@ -63,8 +59,6 @@ export function Navbar() {
           )}
         </button>
       </div>
-
-      {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden flex flex-col w-full bg-surface border-t-4 border-on-surface absolute left-0 top-full shadow-[8px_8px_0px_0px_#1a1c1c] z-0">
           <div className="flex flex-col p-6 gap-6">

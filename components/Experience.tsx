@@ -23,8 +23,7 @@ export function Experience() {
       className="w-full bg-primary-container py-stack-gap border-t-4 border-b-8 border-on-surface"
       id="experience"
     >
-      <div className="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-gutter">
-        {/* Education */}
+      <div className="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-gutter">
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -68,13 +67,12 @@ export function Experience() {
           </div>
         </motion.div>
 
-        {/* Experience */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, margin: "-100px" }}
-          className="flex flex-col gap-6"
+          className="flex flex-col gap-6 mt-12 lg:mt-0"
         >
           <h2 className="font-headline-lg text-headline-lg uppercase bg-tertiary-container inline-block px-4 w-fit neo-border neo-shadow mb-4 md:self-end">
             EXPERIENCE

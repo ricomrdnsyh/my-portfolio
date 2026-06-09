@@ -81,8 +81,6 @@ export function Hero() {
           <div className="relative w-full max-w-[400px] aspect-[4/5] md:aspect-square mx-auto group">
             <div className="absolute inset-0 bg-primary-container border-[4px] border-on-surface translate-x-6 translate-y-6 md:translate-x-8 md:translate-y-8 transition-transform group-hover:translate-x-10 group-hover:translate-y-10"></div>
             <div className="relative z-10 w-full h-full border-[4px] border-on-surface bg-surface-container-lowest p-3">
-              {/* Note: In a real app, you would download the image or use next/image properly configured, 
-                  but here we use a standard img tag with the provided remote URL for fidelity. */}
               <img
                 alt="Ahmad Rico Mardiansyah Portrait"
                 className="w-full h-full object-contain border-[4px] border-on-surface transition-all duration-300"

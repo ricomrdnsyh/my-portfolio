@@ -11,7 +11,7 @@ export function Projects() {
     if (scrollRef.current && scrollRef.current.children.length > 0) {
       const { current } = scrollRef;
       const child = current.children[0] as HTMLElement;
-      const scrollAmount = child.offsetWidth + 32; // card width + gap
+      const scrollAmount = child.offsetWidth + 32;
       current.scrollBy({
         left: direction === "left" ? -scrollAmount : scrollAmount,
         behavior: "smooth",
@@ -103,7 +103,6 @@ export function Projects() {
                 <div
                   className={`relative ${project.bg} border-[4px] border-on-surface flex flex-col h-full transform transition-transform group-hover:-translate-y-2 group-hover:-translate-x-2 w-full`}
                 >
-                  {/* Image Section - Top */}
                   <div className="w-full border-b-[4px] border-on-surface overflow-hidden bg-surface-container-lowest relative flex-shrink-0">
                     <img
                       src={project.image}
@@ -111,10 +110,8 @@ export function Projects() {
                       className="w-full h-full object-cover object-top transition-all duration-[3s] ease-in-out group-hover:object-bottom absolute inset-0"
                     />
                     <div className="relative w-full aspect-video"></div>{" "}
-                    {/* Maintain aspect ratio 16:9 to prevent it from stretching to text height */}
                   </div>
 
-                  {/* Content Section - Bottom */}
                   <div className="w-full p-5 md:p-6 flex flex-col flex-1 justify-between">
                     <div className="flex flex-col gap-3 w-full">
                       <div>
