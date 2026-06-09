@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { FaWhatsapp, FaLocationDot, FaEnvelope } from "react-icons/fa6";
 
 export function Contact() {
   return (
@@ -15,13 +16,34 @@ export function Contact() {
           className="flex flex-col gap-6"
         >
           <h2 className="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg uppercase leading-none">
-            LET'S<br />
+            LET'S{" "}
             <span className="bg-primary-container px-4 py-2 inline-block neo-border neo-shadow my-2">BUILD</span>
             <br />TOGETHER
           </h2>
-          <p className="font-body-lg text-body-lg text-on-surface-variant max-w-md bg-surface-container-lowest p-6 neo-border">
-            Tertarik untuk kolaborasi atau memiliki proyek yang butuh sentuhan developer? Silakan hubungi saya melalui form di samping.
-          </p>
+          <div className="flex flex-col gap-4 max-w-md mt-4">
+            <div className="flex items-center gap-4 bg-surface-container-lowest p-4 neo-border">
+              <FaLocationDot className="w-6 h-6 text-on-surface flex-shrink-0" />
+              <span className="font-body-lg text-body-lg text-on-surface-variant font-bold uppercase">Jawa Timur, Indonesia</span>
+            </div>
+            
+            <a
+              href="https://wa.me/6285182520135"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-4 bg-primary-container text-on-surface p-4 neo-border neo-shadow neo-hover neo-active transition-all duration-100"
+            >
+              <FaWhatsapp className="w-6 h-6 flex-shrink-0" />
+              <span className="font-body-lg text-body-lg font-bold uppercase tracking-wide">0851 8252 0135</span>
+            </a>
+
+            <a
+              href="mailto:ricomardiansyah27@gmail.com"
+              className="flex items-center gap-4 bg-secondary-container text-on-surface p-4 neo-border neo-shadow neo-hover neo-active transition-all duration-100"
+            >
+              <FaEnvelope className="w-6 h-6 flex-shrink-0" />
+              <span className="font-body-lg text-body-lg font-bold uppercase tracking-wide">ricomardiansyah27@gmail</span>
+            </a>
+          </div>
         </motion.div>
 
         <motion.form 

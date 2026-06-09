@@ -12,13 +12,13 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <section className="w-full bg-surface py-stack-gap border-b-8 border-on-surface overflow-hidden">
-      <div className="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-gutter items-center min-h-[80vh]">
+    <section className="w-full bg-surface py-8 md:py-12 lg:py-stack-gap border-b-8 border-on-surface overflow-hidden">
+      <div className="max-w-[1440px] mx-auto px-margin-mobile md:px-12 lg:px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center min-h-fit lg:min-h-[80vh]">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          className="col-span-1 md:col-span-7 flex flex-col gap-6 items-start"
+          className="col-span-1 lg:col-span-7 flex flex-col gap-6 items-start"
         >
           <div className="inline-block px-4 py-2 bg-primary-container text-on-primary-container neo-border font-label-code text-label-code uppercase tracking-widest font-bold -rotate-2">
             FULLSTACK WEB DEVELOPER
@@ -34,40 +34,40 @@ export function Hero() {
           </p>
           <div className="flex flex-wrap gap-4 mt-6">
             <a
-              className="bg-primary-container text-on-surface neo-border neo-shadow neo-hover neo-active p-4 transition-all duration-100 flex items-center justify-center"
+              className="bg-primary-container text-on-surface neo-border neo-shadow neo-hover neo-active p-3 transition-all duration-100 flex items-center justify-center"
               href="https://instagram.com/ricomrdnsyh/"
               target="_blank"
               rel="noreferrer"
               aria-label="Instagram"
             >
-              <FaInstagram className="w-8 h-8" />
+              <FaInstagram className="w-6 h-6" />
             </a>
             <a
-              className="bg-secondary-container text-on-surface neo-border neo-shadow neo-hover neo-active p-4 transition-all duration-100 flex items-center justify-center"
+              className="bg-secondary-container text-on-surface neo-border neo-shadow neo-hover neo-active p-3 transition-all duration-100 flex items-center justify-center"
               href="https://x.com/ricomdnsyh/"
               target="_blank"
               rel="noreferrer"
               aria-label="X (Twitter)"
             >
-              <FaXTwitter className="w-8 h-8" />
+              <FaXTwitter className="w-6 h-6" />
             </a>
             <a
-              className="bg-tertiary-container text-on-surface neo-border neo-shadow neo-hover neo-active p-4 transition-all duration-100 flex items-center justify-center"
+              className="bg-tertiary-container text-on-surface neo-border neo-shadow neo-hover neo-active p-3 transition-all duration-100 flex items-center justify-center"
               href="https://linkedin.com/in/ricomardiansyah/"
               target="_blank"
               rel="noreferrer"
               aria-label="LinkedIn"
             >
-              <FaLinkedinIn className="w-8 h-8" />
+              <FaLinkedinIn className="w-6 h-6" />
             </a>
             <a
-              className="bg-surface-container-lowest text-on-surface neo-border neo-shadow neo-hover neo-active p-4 transition-all duration-100 flex items-center justify-center"
+              className="bg-surface-container-lowest text-on-surface neo-border neo-shadow neo-hover neo-active p-3 transition-all duration-100 flex items-center justify-center"
               href="https://github.com/ricomrdnsyh/"
               target="_blank"
               rel="noreferrer"
               aria-label="GitHub"
             >
-              <FaGithub className="w-8 h-8" />
+              <FaGithub className="w-6 h-6" />
             </a>
           </div>
         </motion.div>
@@ -76,7 +76,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
-          className="col-span-1 md:col-span-5 flex justify-center md:justify-end mt-12 md:mt-0 relative"
+          className="col-span-1 lg:col-span-5 flex justify-center lg:justify-end mt-12 lg:mt-0 relative"
         >
           <div className="relative w-full max-w-[400px] aspect-[4/5] md:aspect-square mx-auto group">
             <div className="absolute inset-0 bg-primary-container border-[4px] border-on-surface translate-x-6 translate-y-6 md:translate-x-8 md:translate-y-8 transition-transform group-hover:translate-x-10 group-hover:translate-y-10"></div>
@@ -90,7 +90,7 @@ export function Hero() {
               />
             </div>
             <Siren
-              className="absolute -top-10 -left-10 text-on-surface w-24 h-24 z-20 hidden md:block rotate-12 drop-shadow-[4px_4px_0px_#ffe174]"
+              className="absolute -top-10 -left-10 text-on-surface w-24 h-24 z-20 hidden lg:block rotate-12 drop-shadow-[4px_4px_0px_#ffe174]"
               strokeWidth={1.5}
             />
           </div>
