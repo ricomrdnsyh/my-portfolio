@@ -44,7 +44,7 @@ export function Hero() {
             </a>
             <a
               className="bg-secondary-container text-on-surface neo-border neo-shadow neo-hover neo-active p-3 transition-all duration-100 flex items-center justify-center"
-              href="https://x.com/ricomdnsyh/"
+              href="https://x.com/ricomrdnsyh/"
               target="_blank"
               rel="noreferrer"
               aria-label="X (Twitter)"

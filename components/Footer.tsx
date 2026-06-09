@@ -1,5 +1,10 @@
 import Link from "next/link";
-import { FaInstagram, FaXTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa6";
+import {
+  FaInstagram,
+  FaXTwitter,
+  FaLinkedinIn,
+  FaGithub,
+} from "react-icons/fa6";
 
 export function Footer() {
   return (
@@ -19,7 +24,7 @@ export function Footer() {
           </Link>
           <Link
             className="text-surface-variant hover:text-primary-fixed transition-colors hover:scale-110 transition-transform"
-            href="https://x.com/ricomdnsyh/"
+            href="https://x.com/ricomrdnsyh/"
             target="_blank"
             aria-label="X (Twitter)"
           >
@@ -43,7 +48,7 @@ export function Footer() {
           </Link>
         </div>
         <div className="text-surface-variant text-center md:text-right">
-          © 2025 · Available for opportunities
+          &copy; 2025 &middot; Available for opportunities
         </div>
       </div>
     </footer>
