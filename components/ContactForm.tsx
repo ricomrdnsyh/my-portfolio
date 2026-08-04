@@ -48,7 +48,7 @@ export function ContactForm() {
 
   return (
     <section
-      className="w-full bg-neon-green py-24 border-b-[8px] border-black text-black"
+      className="w-full bg-stripe-pattern py-stack-gap border-t-4 border-on-surface"
       id="contact"
     >
       <div className="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-gutter items-start">
@@ -59,18 +59,18 @@ export function ContactForm() {
           transition={{ duration: 0.5 }}
           className="flex flex-col gap-6"
         >
-          <h2 className="font-headline-lg text-[40px] md:text-[60px] font-black uppercase leading-none text-black">
+          <h2 className="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg uppercase leading-none">
             LET'S{" "}
-            <span className="bg-white px-4 py-2 inline-block neo-border neo-shadow my-2">
+            <span className="bg-primary-container px-4 py-2 inline-block neo-border neo-shadow my-2">
               BUILD
             </span>
             <br />
             TOGETHER
           </h2>
           <div className="flex flex-col gap-4 max-w-md mt-4">
-            <div className="flex items-center gap-4 bg-white p-4 neo-border text-black">
-              <FaLocationDot className="w-6 h-6 flex-shrink-0" />
-              <span className="font-body-lg text-lg font-bold uppercase">
+            <div className="flex items-center gap-4 bg-surface-container-lowest p-4 neo-border">
+              <FaLocationDot className="w-6 h-6 text-on-surface flex-shrink-0" />
+              <span className="font-body-lg text-body-lg text-on-surface-variant font-bold uppercase">
                 Probolinggo, East Java, Indonesia
               </span>
             </div>
@@ -79,20 +79,20 @@ export function ContactForm() {
               href="https://wa.me/6285182520135"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center gap-4 bg-neon-yellow text-black p-4 neo-border neo-shadow neo-hover neo-active transition-all duration-100"
+              className="flex items-center gap-4 bg-primary-container text-on-surface p-4 neo-border neo-shadow neo-hover neo-active transition-all duration-100"
             >
               <FaWhatsapp className="w-6 h-6 flex-shrink-0" />
-              <span className="font-body-lg text-lg font-bold uppercase tracking-wide">
+              <span className="font-body-lg text-body-lg font-bold uppercase tracking-wide">
                 (+62) 851 8252 0135
               </span>
             </a>
 
             <a
               href="mailto:ricomardiansyah27@gmail.com"
-              className="flex items-center gap-4 bg-neon-cyan text-black p-4 neo-border neo-shadow neo-hover neo-active transition-all duration-100"
+              className="flex items-center gap-4 bg-secondary-container text-on-surface p-4 neo-border neo-shadow neo-hover neo-active transition-all duration-100"
             >
               <FaEnvelope className="w-6 h-6 flex-shrink-0" />
-              <span className="font-body-lg text-lg font-bold uppercase tracking-wide">
+              <span className="font-body-lg text-body-lg font-bold uppercase tracking-wide">
                 ricomardiansyah27@gmail
               </span>
             </a>
@@ -105,7 +105,7 @@ export function ContactForm() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5 }}
-          className="bg-white p-8 neo-border neo-shadow flex flex-col gap-6 w-full text-black"
+          className="bg-surface-container-lowest p-8 neo-border neo-shadow flex flex-col gap-6 w-full"
         >
           {isSuccess && (
             <div className="bg-[#A7F3D0] text-[#064E3B] p-4 font-bold text-center border-2 border-[#064E3B] shadow-[4px_4px_0px_0px_#064E3B] mb-4">
@@ -127,7 +127,7 @@ export function ContactForm() {
               NAME
             </label>
             <input
-              className="w-full bg-white neo-border p-4 font-body-md text-body-md focus:bg-neon-yellow focus:ring-0 focus:outline-none transition-colors border-black"
+              className="w-full bg-surface neo-border p-4 font-body-md text-body-md focus:bg-primary-container focus:ring-0 focus:outline-none transition-colors"
               id="name"
               name="name"
               placeholder="yourname"
@@ -143,7 +143,7 @@ export function ContactForm() {
               EMAIL
             </label>
             <input
-              className="w-full bg-white neo-border p-4 font-body-md text-body-md focus:bg-neon-yellow focus:ring-0 focus:outline-none transition-colors border-black"
+              className="w-full bg-surface neo-border p-4 font-body-md text-body-md focus:bg-primary-container focus:ring-0 focus:outline-none transition-colors"
               id="email"
               name="email"
               placeholder="name@gmail.com"
@@ -159,7 +159,7 @@ export function ContactForm() {
               Message
             </label>
             <textarea
-              className="w-full bg-white neo-border p-4 font-body-md text-body-md focus:bg-neon-yellow focus:ring-0 focus:outline-none transition-colors resize-none border-black"
+              className="w-full bg-surface neo-border p-4 font-body-md text-body-md focus:bg-primary-container focus:ring-0 focus:outline-none transition-colors resize-none"
               id="message"
               name="message"
               placeholder="Tell us about your project..."
@@ -168,7 +168,7 @@ export function ContactForm() {
             ></textarea>
           </div>
           <button
-            className="w-full bg-black text-white neo-border neo-shadow neo-hover neo-active p-4 font-headline-md text-[24px] font-black uppercase tracking-wider mt-4 disabled:opacity-50 border-black"
+            className="w-full bg-on-surface text-surface neo-border neo-shadow neo-hover neo-active p-4 font-headline-md text-headline-md uppercase tracking-wider mt-4 disabled:opacity-50"
             type="submit"
             disabled={isSubmitting}
           >

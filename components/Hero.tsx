@@ -38,7 +38,7 @@ export function Hero() {
         transition={{ duration: 0.5, delay: 0.2 }}
         className="relative z-20 mt-[-8vw] md:mt-[-100px] w-full max-w-[280px] md:max-w-[360px] aspect-[4/5]"
       >
-        <div className="w-full h-full neo-border neo-shadow bg-white p-3 rotate-3 hover:rotate-0 transition-transform duration-300">
+        <div className="w-full h-full border-[6px] border-black shadow-[10px_10px_0px_0px_#000] bg-white p-3 rotate-3 hover:rotate-0 transition-transform duration-300">
            <img
             alt="Ahmad Rico Mardiansyah Portrait"
             className="w-full h-full object-cover border-[4px] border-black"
@@ -56,7 +56,7 @@ export function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.4 }}
-        className="relative z-20 mt-16 bg-white neo-border neo-shadow p-6 md:p-8 max-w-2xl text-center mx-4"
+        className="relative z-20 mt-16 bg-white border-[6px] border-black shadow-[10px_10px_0px_0px_#000] p-6 md:p-8 max-w-2xl text-center mx-4"
       >
         <div className="inline-block px-4 py-2 bg-black text-white font-label-code text-sm uppercase tracking-widest font-bold mb-4 -rotate-2">
           Based in Indonesia
@@ -67,16 +67,16 @@ export function Hero() {
         </p>
         
         <div className="flex flex-wrap gap-4 justify-center">
-            <a className="bg-neon-pink text-black neo-border neo-shadow neo-hover neo-active p-4 flex items-center justify-center transition-all" href="https://instagram.com/ricomrdnsyh/" target="_blank" rel="noreferrer" aria-label="Instagram">
+            <a className="bg-neon-pink text-black border-[6px] border-black shadow-[10px_10px_0px_0px_#000] hover:translate-x-[6px] hover:translate-y-[6px] hover:shadow-[4px_4px_0px_0px_#000] active:translate-x-[10px] active:translate-y-[10px] active:shadow-none p-4 flex items-center justify-center transition-all" href="https://instagram.com/ricomrdnsyh/" target="_blank" rel="noreferrer" aria-label="Instagram">
               <FaInstagram className="w-6 h-6" />
             </a>
-            <a className="bg-neon-cyan text-black neo-border neo-shadow neo-hover neo-active p-4 flex items-center justify-center transition-all" href="https://x.com/ricomrdnsyh/" target="_blank" rel="noreferrer" aria-label="X (Twitter)">
+            <a className="bg-neon-cyan text-black border-[6px] border-black shadow-[10px_10px_0px_0px_#000] hover:translate-x-[6px] hover:translate-y-[6px] hover:shadow-[4px_4px_0px_0px_#000] active:translate-x-[10px] active:translate-y-[10px] active:shadow-none p-4 flex items-center justify-center transition-all" href="https://x.com/ricomrdnsyh/" target="_blank" rel="noreferrer" aria-label="X (Twitter)">
               <FaXTwitter className="w-6 h-6" />
             </a>
-            <a className="bg-neon-green text-black neo-border neo-shadow neo-hover neo-active p-4 flex items-center justify-center transition-all" href="https://linkedin.com/in/ricomardiansyah/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <a className="bg-neon-green text-black border-[6px] border-black shadow-[10px_10px_0px_0px_#000] hover:translate-x-[6px] hover:translate-y-[6px] hover:shadow-[4px_4px_0px_0px_#000] active:translate-x-[10px] active:translate-y-[10px] active:shadow-none p-4 flex items-center justify-center transition-all" href="https://linkedin.com/in/ricomardiansyah/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
               <FaLinkedinIn className="w-6 h-6" />
             </a>
-            <a className="bg-white text-black neo-border neo-shadow neo-hover neo-active p-4 flex items-center justify-center transition-all" href="https://github.com/ricomrdnsyh/" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <a className="bg-white text-black border-[6px] border-black shadow-[10px_10px_0px_0px_#000] hover:translate-x-[6px] hover:translate-y-[6px] hover:shadow-[4px_4px_0px_0px_#000] active:translate-x-[10px] active:translate-y-[10px] active:shadow-none p-4 flex items-center justify-center transition-all" href="https://github.com/ricomrdnsyh/" target="_blank" rel="noreferrer" aria-label="GitHub">
               <FaGithub className="w-6 h-6" />
             </a>
         </div>
