@@ -27,7 +27,7 @@ export function Projects() {
       image: "/images/sipermata.png",
       demoUrl: "https://sipermata.unuja.ac.id",
       sourceUrl: "#",
-      bg: "bg-secondary-container",
+      bg: "bg-neon-cyan",
       tech: ["Laravel", "MySQL", "Tailwind", "Bootstrap", "Rest API"],
     },
     {
@@ -37,7 +37,7 @@ export function Projects() {
       image: "/images/lapor.png",
       demoUrl: "https://lapor.unuja.ac.id",
       sourceUrl: "#",
-      bg: "bg-primary-container",
+      bg: "bg-neon-yellow",
       tech: ["Laravel", "MySQL", "Bootstrap", "Rest API"],
     },
     {
@@ -48,7 +48,7 @@ export function Projects() {
       demoUrl: "#",
       sourceUrl:
         "https://github.com/ricomrdnsyh/Aplikasi-Sarana-Perpus-Laravel10",
-      bg: "bg-tertiary-container",
+      bg: "bg-neon-green",
       tech: ["Laravel", "MySQL", "Bootstrap"],
     },
     {
@@ -58,20 +58,20 @@ export function Projects() {
       image: "/images/umkm.png",
       demoUrl: "https://frontend-capstone-umkmgrow.vercel.app/",
       sourceUrl: "https://github.com/orgs/FS-9-SkilvulTech4Impact/repositories",
-      bg: "bg-surface-variant",
+      bg: "bg-neon-purple",
       tech: ["React", "Node.js", "Express"],
     },
   ];
 
   return (
     <section
-      className="w-full bg-surface-container-low py-stack-gap border-t-4 border-on-surface"
+      className="w-full bg-neon-pink py-24 border-b-[8px] border-black text-black"
       id="project"
     >
       <div className="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop flex flex-col gap-8">
-        <h2 className="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg uppercase text-center w-full">
+        <h2 className="font-headline-lg text-[40px] md:text-[60px] font-black uppercase text-center w-full">
           FEATURED{" "}
-          <span className="bg-primary-container px-4 py-2 neo-border neo-shadow inline-block transform -rotate-2">
+          <span className="bg-white px-4 py-2 neo-border neo-shadow inline-block transform -rotate-2">
             PROJECTS
           </span>
         </h2>
@@ -79,7 +79,7 @@ export function Projects() {
         <div className="flex items-center gap-4 md:gap-6 w-full mt-8">
           <button
             onClick={() => scroll("left")}
-            className="flex-shrink-0 bg-surface-container-lowest text-on-surface neo-border p-2 md:p-3 shadow-[4px_4px_0px_0px_#1a1c1c] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all duration-100 hidden md:block"
+            className="flex-shrink-0 bg-white text-black neo-border p-2 md:p-3 shadow-[8px_8px_0px_0px_#000] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all duration-100 hidden md:block"
             aria-label="Scroll Left"
           >
             <ArrowLeft className="w-6 h-6 md:w-8 md:h-8" strokeWidth={3} />
@@ -99,11 +99,11 @@ export function Projects() {
                 transition={{ duration: 0.4, delay: index * 0.1 }}
                 className="relative group mt-8 md:mt-0 w-[85vw] md:w-[600px] flex-shrink-0 snap-center"
               >
-                <div className="absolute inset-0 bg-on-surface translate-x-4 translate-y-4"></div>
+                <div className="absolute inset-0 bg-black translate-x-4 translate-y-4"></div>
                 <div
-                  className={`relative ${project.bg} border-[4px] border-on-surface flex flex-col h-full transform transition-transform group-hover:-translate-y-2 group-hover:-translate-x-2 w-full`}
+                  className={`relative ${project.bg} border-[6px] border-black flex flex-col h-full transform transition-transform group-hover:-translate-y-2 group-hover:-translate-x-2 w-full`}
                 >
-                  <div className="w-full border-b-[4px] border-on-surface overflow-hidden bg-surface-container-lowest relative flex-shrink-0">
+                  <div className="w-full border-b-[6px] border-black overflow-hidden bg-white relative flex-shrink-0">
                     <img
                       src={project.image}
                       alt={project.title}
@@ -130,7 +130,7 @@ export function Projects() {
                         {project.tech.map((t) => (
                           <span
                             key={t}
-                            className="px-3 py-1 bg-surface-container-lowest border-[2px] border-on-surface font-label-code text-label-code font-bold uppercase shadow-[2px_2px_0px_0px_#1a1c1c]"
+                            className="px-3 py-1 bg-white border-[3px] border-black font-label-code text-label-code font-bold uppercase shadow-[3px_3px_0px_0px_#000]"
                           >
                             {t}
                           </span>
@@ -143,7 +143,7 @@ export function Projects() {
                         href={project.demoUrl}
                         target="_blank"
                         rel="noreferrer"
-                        className="flex flex-1 items-center justify-center gap-2 bg-primary text-on-primary neo-border neo-shadow neo-hover neo-active px-4 py-3 font-bold uppercase transition-all duration-100"
+                        className="flex flex-1 items-center justify-center gap-2 bg-black text-white neo-border neo-shadow neo-hover neo-active px-4 py-3 font-bold uppercase transition-all duration-100"
                       >
                         <ExternalLink className="w-5 h-5" strokeWidth={2.5} />
                         DEMO
@@ -152,7 +152,7 @@ export function Projects() {
                         href={project.sourceUrl}
                         target="_blank"
                         rel="noreferrer"
-                        className="flex flex-1 items-center justify-center gap-2 bg-surface-container-lowest text-on-surface neo-border neo-shadow neo-hover neo-active px-4 py-3 font-bold uppercase transition-all duration-100"
+                        className="flex flex-1 items-center justify-center gap-2 bg-white text-black neo-border neo-shadow neo-hover neo-active px-4 py-3 font-bold uppercase transition-all duration-100"
                       >
                         <Code className="w-5 h-5" strokeWidth={2.5} />
                         CODE
@@ -166,7 +166,7 @@ export function Projects() {
 
           <button
             onClick={() => scroll("right")}
-            className="flex-shrink-0 bg-surface-container-lowest text-on-surface neo-border p-2 md:p-3 shadow-[4px_4px_0px_0px_#1a1c1c] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all duration-100 hidden md:block"
+            className="flex-shrink-0 bg-white text-black neo-border p-2 md:p-3 shadow-[8px_8px_0px_0px_#000] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all duration-100 hidden md:block"
             aria-label="Scroll Right"
           >
             <ArrowRight className="w-6 h-6 md:w-8 md:h-8" strokeWidth={3} />

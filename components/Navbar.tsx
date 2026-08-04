@@ -8,7 +8,7 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-surface text-primary font-body-lg text-body-lg uppercase font-bold w-full sticky top-0 z-50 border-b-4 border-on-surface shadow-[8px_8px_0px_0px_#1a1c1c]">
+    <nav className="bg-surface text-primary font-body-lg text-body-lg uppercase font-bold w-full sticky top-0 z-50 border-b-[6px] border-[#000] shadow-[10px_10px_0px_0px_#000]">
       <div className="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-6 max-w-[1440px] mx-auto bg-surface relative z-10">
         <div className="font-headline-md text-headline-md font-black tracking-tighter text-on-surface">
           RCMRDNSYH
@@ -48,7 +48,7 @@ export function Navbar() {
           RESUME
         </a>
         <button
-          className="md:hidden text-on-surface neo-border p-2 bg-primary-container shadow-[4px_4px_0px_0px_#1a1c1c] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all duration-100"
+          className="md:hidden text-black neo-border p-2 bg-primary-container neo-shadow neo-active transition-all duration-100"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
         >
@@ -60,7 +60,7 @@ export function Navbar() {
         </button>
       </div>
       {isOpen && (
-        <div className="md:hidden flex flex-col w-full bg-surface border-t-4 border-on-surface absolute left-0 top-full shadow-[8px_8px_0px_0px_#1a1c1c] z-0">
+        <div className="md:hidden flex flex-col w-full bg-surface border-t-[6px] border-[#000] absolute left-0 top-full shadow-[10px_10px_0px_0px_#000] z-0">
           <div className="flex flex-col p-6 gap-6">
             <Link
               onClick={() => setIsOpen(false)}
@@ -94,7 +94,7 @@ export function Navbar() {
               href="/Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full block text-center text-on-surface neo-border shadow-[4px_4px_0px_0px_#1a1c1c] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none bg-primary-container px-6 py-4 font-bold uppercase transition-all duration-100 mt-4"
+              className="w-full block text-center text-on-surface neo-border neo-shadow neo-active bg-primary-container px-6 py-4 font-bold uppercase transition-all duration-100 mt-4"
             >
               RESUME
             </a>
