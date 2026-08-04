@@ -13,14 +13,14 @@ export function Hero() {
   return (
     <section className="relative w-full min-h-[90vh] bg-neon-yellow border-b-[8px] border-black overflow-hidden flex flex-col justify-center items-center pt-24 pb-12">
       {/* Marquee Background */}
-      <div className="absolute inset-0 flex items-center justify-center opacity-20 pointer-events-none overflow-hidden whitespace-nowrap">
+      <div className="absolute inset-0 flex items-center justify-center opacity-20 pointer-events-none overflow-hidden whitespace-nowrap z-0">
         <div className="animate-marquee inline-block font-display-lg text-[20vw] font-black uppercase text-black">
            FULLSTACK WEB DEVELOPER • PROBLEM SOLVER • CREATIVE CODER • FULLSTACK WEB DEVELOPER • PROBLEM SOLVER • CREATIVE CODER • 
         </div>
       </div>
       
       {/* Giant Typography */}
-      <div className="relative z-10 text-center w-full max-w-[1440px] px-4 pointer-events-none mt-8">
+      <div className="relative z-30 text-center w-full max-w-[1440px] px-4 pointer-events-none mt-8">
         <motion.h1 
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -36,7 +36,7 @@ export function Hero() {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className="relative z-20 mt-[-8vw] md:mt-[-100px] w-full max-w-[280px] md:max-w-[360px] aspect-[4/5]"
+        className="relative z-20 mt-[-8vw] md:mt-[-100px] w-full max-w-[280px] md:max-w-[360px] aspect-[4/5] mx-auto"
       >
         <div className="w-full h-full border-[6px] border-black shadow-[10px_10px_0px_0px_#000] bg-white p-3 rotate-3 hover:rotate-0 transition-transform duration-300">
            <img
