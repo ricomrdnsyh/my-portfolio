@@ -25,7 +25,7 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="font-display-lg text-[15vw] md:text-[160px] leading-[0.85] uppercase font-black text-black drop-shadow-[8px_8px_0px_#fff]"
+          className="font-display-lg text-[15vw] md:text-[14vw] lg:text-[160px] leading-[0.85] uppercase font-black text-black drop-shadow-[4px_4px_0px_#fff] md:drop-shadow-[8px_8px_0px_#fff]"
         >
           RICO<br/>MARDIANSYAH
         </motion.h1>
@@ -36,7 +36,7 @@ export function Hero() {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className="relative z-20 mt-[-8vw] md:mt-[-100px] w-full max-w-[280px] md:max-w-[360px] aspect-[4/5] mx-auto"
+        className="relative z-20 mt-[-10vw] md:mt-[-8vw] lg:mt-[-100px] w-[80%] max-w-[240px] md:max-w-[280px] lg:max-w-[360px] aspect-[4/5] mx-auto"
       >
         <div className="w-full h-full border-[6px] border-black shadow-[10px_10px_0px_0px_#000] bg-white p-3 rotate-3 hover:rotate-0 transition-transform duration-300">
            <img
@@ -46,7 +46,7 @@ export function Hero() {
           />
         </div>
         <Siren
-          className="absolute -top-10 -right-10 text-black w-24 h-24 z-20 rotate-12 drop-shadow-[4px_4px_0px_#fff]"
+          className="absolute -top-6 -right-6 md:-top-10 md:-right-10 text-black w-16 h-16 md:w-24 md:h-24 z-20 rotate-12 drop-shadow-[2px_2px_0px_#fff] md:drop-shadow-[4px_4px_0px_#fff]"
           strokeWidth={2}
         />
       </motion.div>
@@ -56,7 +56,7 @@ export function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.4 }}
-        className="relative z-20 mt-16 bg-white border-[6px] border-black shadow-[10px_10px_0px_0px_#000] p-6 md:p-8 max-w-2xl text-center mx-4"
+        className="relative z-20 mt-12 md:mt-16 bg-white border-[4px] md:border-[6px] border-black shadow-[6px_6px_0px_0px_#000] md:shadow-[10px_10px_0px_0px_#000] p-5 md:p-8 w-[calc(100%-2rem)] max-w-2xl text-center mx-auto"
       >
         <div className="inline-block px-4 py-2 bg-black text-white font-label-code text-sm uppercase tracking-widest font-bold mb-4 -rotate-2">
           Based in Indonesia
@@ -66,18 +66,18 @@ export function Hero() {
           I engineer digital experiences that hit hard and run fast.
         </p>
         
-        <div className="flex flex-wrap gap-4 justify-center">
-            <a className="bg-neon-pink text-black border-[6px] border-black shadow-[10px_10px_0px_0px_#000] hover:translate-x-[6px] hover:translate-y-[6px] hover:shadow-[4px_4px_0px_0px_#000] active:translate-x-[10px] active:translate-y-[10px] active:shadow-none p-4 flex items-center justify-center transition-all" href="https://instagram.com/ricomrdnsyh/" target="_blank" rel="noreferrer" aria-label="Instagram">
-              <FaInstagram className="w-6 h-6" />
+        <div className="flex flex-wrap gap-3 md:gap-4 justify-center">
+            <a className="bg-neon-pink text-black border-[4px] md:border-[6px] border-black shadow-[6px_6px_0px_0px_#000] md:shadow-[10px_10px_0px_0px_#000] hover:translate-x-[4px] md:hover:translate-x-[6px] hover:translate-y-[4px] md:hover:translate-y-[6px] hover:shadow-[2px_2px_0px_0px_#000] md:hover:shadow-[4px_4px_0px_0px_#000] active:translate-x-[6px] md:active:translate-x-[10px] active:translate-y-[6px] md:active:translate-y-[10px] active:shadow-none p-3 md:p-4 flex items-center justify-center transition-all" href="https://instagram.com/ricomrdnsyh/" target="_blank" rel="noreferrer" aria-label="Instagram">
+              <FaInstagram className="w-5 h-5 md:w-6 md:h-6" />
             </a>
-            <a className="bg-neon-cyan text-black border-[6px] border-black shadow-[10px_10px_0px_0px_#000] hover:translate-x-[6px] hover:translate-y-[6px] hover:shadow-[4px_4px_0px_0px_#000] active:translate-x-[10px] active:translate-y-[10px] active:shadow-none p-4 flex items-center justify-center transition-all" href="https://x.com/ricomrdnsyh/" target="_blank" rel="noreferrer" aria-label="X (Twitter)">
-              <FaXTwitter className="w-6 h-6" />
+            <a className="bg-neon-cyan text-black border-[4px] md:border-[6px] border-black shadow-[6px_6px_0px_0px_#000] md:shadow-[10px_10px_0px_0px_#000] hover:translate-x-[4px] md:hover:translate-x-[6px] hover:translate-y-[4px] md:hover:translate-y-[6px] hover:shadow-[2px_2px_0px_0px_#000] md:hover:shadow-[4px_4px_0px_0px_#000] active:translate-x-[6px] md:active:translate-x-[10px] active:translate-y-[6px] md:active:translate-y-[10px] active:shadow-none p-3 md:p-4 flex items-center justify-center transition-all" href="https://x.com/ricomrdnsyh/" target="_blank" rel="noreferrer" aria-label="X (Twitter)">
+              <FaXTwitter className="w-5 h-5 md:w-6 md:h-6" />
             </a>
-            <a className="bg-neon-green text-black border-[6px] border-black shadow-[10px_10px_0px_0px_#000] hover:translate-x-[6px] hover:translate-y-[6px] hover:shadow-[4px_4px_0px_0px_#000] active:translate-x-[10px] active:translate-y-[10px] active:shadow-none p-4 flex items-center justify-center transition-all" href="https://linkedin.com/in/ricomardiansyah/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
-              <FaLinkedinIn className="w-6 h-6" />
+            <a className="bg-neon-green text-black border-[4px] md:border-[6px] border-black shadow-[6px_6px_0px_0px_#000] md:shadow-[10px_10px_0px_0px_#000] hover:translate-x-[4px] md:hover:translate-x-[6px] hover:translate-y-[4px] md:hover:translate-y-[6px] hover:shadow-[2px_2px_0px_0px_#000] md:hover:shadow-[4px_4px_0px_0px_#000] active:translate-x-[6px] md:active:translate-x-[10px] active:translate-y-[6px] md:active:translate-y-[10px] active:shadow-none p-3 md:p-4 flex items-center justify-center transition-all" href="https://linkedin.com/in/ricomardiansyah/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+              <FaLinkedinIn className="w-5 h-5 md:w-6 md:h-6" />
             </a>
-            <a className="bg-white text-black border-[6px] border-black shadow-[10px_10px_0px_0px_#000] hover:translate-x-[6px] hover:translate-y-[6px] hover:shadow-[4px_4px_0px_0px_#000] active:translate-x-[10px] active:translate-y-[10px] active:shadow-none p-4 flex items-center justify-center transition-all" href="https://github.com/ricomrdnsyh/" target="_blank" rel="noreferrer" aria-label="GitHub">
-              <FaGithub className="w-6 h-6" />
+            <a className="bg-white text-black border-[4px] md:border-[6px] border-black shadow-[6px_6px_0px_0px_#000] md:shadow-[10px_10px_0px_0px_#000] hover:translate-x-[4px] md:hover:translate-x-[6px] hover:translate-y-[4px] md:hover:translate-y-[6px] hover:shadow-[2px_2px_0px_0px_#000] md:hover:shadow-[4px_4px_0px_0px_#000] active:translate-x-[6px] md:active:translate-x-[10px] active:translate-y-[6px] md:active:translate-y-[10px] active:shadow-none p-3 md:p-4 flex items-center justify-center transition-all" href="https://github.com/ricomrdnsyh/" target="_blank" rel="noreferrer" aria-label="GitHub">
+              <FaGithub className="w-5 h-5 md:w-6 md:h-6" />
             </a>
         </div>
       </motion.div>
