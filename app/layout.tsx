@@ -14,8 +14,9 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AHMAD RICO MARDIANSYAH - Fullstack Developer Portfolio",
-  description: "Building robust, scalable backends and engaging, dynamic frontends. I engineer digital experiences that hit hard and run fast.",
+  title: "AHMAD RICO MARDIANSYAH",
+  description:
+    "Building robust, scalable backends and engaging, dynamic frontends. I engineer digital experiences that hit hard and run fast.",
 };
 
 export default function RootLayout({
