@@ -9,10 +9,25 @@ import {
   SiBootstrap,
   SiTailwindcss,
   SiGit,
+  SiHtml5,
+  SiCss,
 } from "react-icons/si";
+import { FaNetworkWired } from "react-icons/fa6";
 
 export function About() {
   const skills = [
+    {
+      name: "HTML",
+      icon: <SiHtml5 className="w-6 h-6" />,
+      bg: "#E34F26",
+      color: "white",
+    },
+    {
+      name: "CSS",
+      icon: <SiCss className="w-6 h-6" />,
+      bg: "#1572B6",
+      color: "white",
+    },
     {
       name: "PHP",
       icon: <SiPhp className="w-6 h-6" />,
@@ -53,6 +68,12 @@ export function About() {
       name: "Git",
       icon: <SiGit className="w-6 h-6" />,
       bg: "#F05032",
+      color: "white",
+    },
+    {
+      name: "REST API",
+      icon: <FaNetworkWired className="w-6 h-6" />,
+      bg: "#009688",
       color: "white",
     },
   ];
@@ -100,10 +121,14 @@ export function About() {
           <h2 className="font-headline-lg text-headline-lg uppercase mb-6">
             <span className="bg-tertiary-container px-2">ABOUT</span> ME
           </h2>
-          <div className="bg-surface-container-lowest p-8 neo-border neo-shadow text-body-lg font-body-lg">
-            I'm a full-stack developer with a strong focus on backend
-            architecture and interactive frontend design. Building systems that
-            not only function but also provide a solid user experience.
+          <div className="bg-surface-container-lowest p-8 neo-border neo-shadow text-body-lg text-justify font-body-lg">
+            I am a Full-Stack Developer with a strong passion for creating
+            modern web applications that combine robust backend systems with
+            intuitive frontend experiences. I enjoy solving complex technical
+            challenges, optimizing performance, and building software that is
+            reliable, scalable, and user-friendly. My mission is to develop
+            products that not only function flawlessly but also deliver
+            meaningful value to every user.
           </div>
         </motion.div>
       </div>

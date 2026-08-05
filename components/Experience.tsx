@@ -20,7 +20,7 @@ export function Experience() {
 
   return (
     <section
-      className="w-full bg-primary-container py-stack-gap border-t-4 border-b-8 border-on-surface"
+      className="w-full bg-neon-cyan py-stack-gap border-t-4 border-b-8 border-on-surface"
       id="experience"
     >
       <div className="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-gutter">
@@ -31,12 +31,12 @@ export function Experience() {
           viewport={{ once: true, margin: "-100px" }}
           className="flex flex-col gap-6"
         >
-          <h2 className="font-headline-lg text-headline-lg uppercase bg-primary-container inline-block px-4 w-fit neo-border neo-shadow mb-4">
+          <h2 className="font-headline-lg text-headline-lg uppercase bg-neon-pink text-white inline-block px-4 w-fit neo-border neo-shadow mb-4">
             EDUCATION
           </h2>
           <div className="relative border-l-4 border-on-surface pl-8 ml-4 flex flex-col gap-12">
             <motion.div variants={itemVariants} className="relative">
-              <div className="absolute -left-[42px] top-0 w-6 h-6 bg-primary-container neo-border rounded-full"></div>
+              <div className="absolute -left-[42px] top-0 w-6 h-6 bg-neon-pink neo-border rounded-full"></div>
               <div className="bg-surface-container-lowest p-6 neo-border neo-shadow neo-hover transition-all duration-100">
                 <h3 className="font-headline-md text-headline-md">
                   Nurul Jadid University
@@ -51,7 +51,7 @@ export function Experience() {
             </motion.div>
 
             <motion.div variants={itemVariants} className="relative">
-              <div className="absolute -left-[42px] top-0 w-6 h-6 bg-secondary-container neo-border rounded-full"></div>
+              <div className="absolute -left-[42px] top-0 w-6 h-6 bg-neon-yellow neo-border rounded-full"></div>
               <div className="bg-surface-container-lowest p-6 neo-border neo-shadow neo-hover transition-all duration-100">
                 <h3 className="font-headline-md text-headline-md">
                   SMK Negeri 2 Kraksaan
@@ -74,12 +74,12 @@ export function Experience() {
           viewport={{ once: true, margin: "-100px" }}
           className="flex flex-col gap-6 mt-12 lg:mt-0"
         >
-          <h2 className="font-headline-lg text-headline-lg uppercase bg-tertiary-container inline-block px-4 w-fit neo-border neo-shadow mb-4 md:self-end">
+          <h2 className="font-headline-lg text-headline-lg uppercase bg-neon-yellow text-black inline-block px-4 w-fit neo-border neo-shadow mb-4 md:self-end">
             EXPERIENCE
           </h2>
           <div className="flex flex-col gap-6">
             <motion.div variants={itemVariants}>
-              <div className="bg-surface-container-lowest p-6 neo-border neo-shadow neo-hover transition-all duration-100 border-t-[8px] border-t-primary-container">
+              <div className="bg-surface-container-lowest p-6 neo-border neo-shadow neo-hover transition-all duration-100 border-t-[8px] border-t-[#ff007f]">
                 <div className="flex flex-col xl:flex-row xl:justify-between xl:items-start gap-2 mb-2">
                   <h3 className="font-headline-md text-headline-md">
                     Software Engineer
@@ -99,7 +99,7 @@ export function Experience() {
             </motion.div>
 
             <motion.div variants={itemVariants}>
-              <div className="bg-surface-container-lowest p-6 neo-border neo-shadow neo-hover transition-all duration-100 border-t-[8px] border-t-tertiary-container">
+              <div className="bg-surface-container-lowest p-6 neo-border neo-shadow neo-hover transition-all duration-100 border-t-[8px] border-t-[#f6e036]">
                 <div className="flex flex-col xl:flex-row xl:justify-between xl:items-start gap-2 mb-2">
                   <h3 className="font-headline-md text-headline-md">
                     Customer Services PMB
@@ -119,7 +119,7 @@ export function Experience() {
             </motion.div>
 
             <motion.div variants={itemVariants}>
-              <div className="bg-surface-container-lowest p-6 neo-border neo-shadow neo-hover transition-all duration-100 border-t-[8px] border-t-secondary-container">
+              <div className="bg-surface-container-lowest p-6 neo-border neo-shadow neo-hover transition-all duration-100 border-t-[8px] border-t-[#b000ff]">
                 <div className="flex flex-col xl:flex-row xl:justify-between xl:items-start gap-2 mb-2">
                   <h3 className="font-headline-md text-headline-md">
                     Fullstack Web Development
@@ -140,7 +140,7 @@ export function Experience() {
             </motion.div>
 
             <motion.div variants={itemVariants}>
-              <div className="bg-surface-container-lowest p-6 neo-border neo-shadow neo-hover transition-all duration-100 border-t-[8px] border-t-primary-container">
+              <div className="bg-surface-container-lowest p-6 neo-border neo-shadow neo-hover transition-all duration-100 border-t-[8px] border-t-[#00ff55]">
                 <div className="flex flex-col xl:flex-row xl:justify-between xl:items-start gap-2 mb-2">
                   <h3 className="font-headline-md text-headline-md">
                     Admin &amp; Technician
