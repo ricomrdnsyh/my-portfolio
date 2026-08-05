@@ -21,12 +21,22 @@ export function Projects() {
 
   const projects = [
     {
+      title: "SKPI",
+      subtitle: "Sistem Pengajuan Surat Keterangan Pendamping Ijazah",
+      desc: "Sistem informasi digital untuk memfasilitasi mahasiswa dalam pengajuan, validasi, dan penerbitan Surat Keterangan Pendamping Ijazah (SKPI).",
+      image: "/images/skpi.png",
+      demoUrl: "https://skpi.unuja.ac.id",
+      sourceUrl: "https://github.com/ricomrdnsyh/SKPI",
+      bg: "bg-surface-variant",
+      tech: ["Laravel", "MySQL", "Tailwind", "Bootstrap"],
+    },
+    {
       title: "SiPermata",
       subtitle: "Sistem Informasi Pengajuan Surat Mahasiswa",
       desc: "Aplikasi layanan surat menyurat mahasiswa Universitas Nurul Jadid yang terintegrasi secara digital untuk kemudahan layanan akademik.",
       image: "/images/sipermata.png",
       demoUrl: "https://sipermata.unuja.ac.id",
-      sourceUrl: "#",
+      sourceUrl: "https://github.com/ricomrdnsyh/SiPermata",
       bg: "bg-secondary-container",
       tech: ["Laravel", "MySQL", "Tailwind", "Bootstrap", "Rest API"],
     },
@@ -36,7 +46,7 @@ export function Projects() {
       desc: "Sistem informasi manajemen pengaduan dan aspirasi digital untuk civitas akademika Universitas Nurul Jadid.",
       image: "/images/lapor.png",
       demoUrl: "https://lapor.unuja.ac.id",
-      sourceUrl: "#",
+      sourceUrl: "https://github.com/ricomrdnsyh/E-Lapor",
       bg: "bg-primary-container",
       tech: ["Laravel", "MySQL", "Bootstrap", "Rest API"],
     },
@@ -87,7 +97,7 @@ export function Projects() {
 
           <div
             ref={scrollRef}
-            className="flex-1 flex overflow-x-auto gap-8 pb-8 scroll-smooth snap-x snap-mandatory px-4 md:px-0"
+            className="flex-1 flex flex-col md:flex-row overflow-visible md:overflow-x-auto gap-12 md:gap-8 pb-8 md:scroll-smooth md:snap-x md:snap-mandatory px-2 md:px-0"
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
             {projects.map((project, index) => (
@@ -97,7 +107,7 @@ export function Projects() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
-                className="relative group mt-8 md:mt-0 w-[85vw] md:w-[600px] flex-shrink-0 snap-center"
+                className="relative group mt-4 md:mt-0 w-full md:w-[600px] flex-shrink-0 md:snap-center"
               >
                 <div className="absolute inset-0 bg-on-surface translate-x-4 translate-y-4"></div>
                 <div
